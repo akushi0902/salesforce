@@ -1,14 +1,12 @@
-@IsTest
+@isTest
 public class TestDataFactory {
 
-    public static Account createAccount(Boolean isActive) {
+    public static Account createAccount(Boolean insertRec) {
         Account acc = new Account(
             Name = 'Test Account',
-            Active__c = isActive 
-                ? ApplicationConstants.STATUS_ACTIVE
-                : ApplicationConstants.STATUS_INACTIVE
+            Active__c = 'Active'
         );
-        insert acc;
+        if (insertRec) insert acc;
         return acc;
     }
 }
