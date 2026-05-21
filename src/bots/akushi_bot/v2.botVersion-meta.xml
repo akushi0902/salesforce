@@ -1,12 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
+<?xml version="1.0" encoding="UTF-8"?><?xml version="1.0" encoding.com/2006/04/metadata">
 
-    <botName>akushi_bot</botName>
+    <conversationDefinition>akushi_bot</conversationDefinition>
     <versionNumber>2</versionNumber>
-
-    <!-- ✅ THIS is where entry dialog is defined -->
-    <entryDialog>Welcome</entryDialog>
-
     <status>Draft</status>
+
+    <!-- ✅ REQUIRED -->
+    <entryDialog>Welcome</entryDialog>
 
 </BotVersion>
