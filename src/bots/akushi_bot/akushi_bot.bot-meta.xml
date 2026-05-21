@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bot xmlns="http://soap.sforce.com/2006/04/metadata">
     <agentDSLEnabled>false</agentDSLEnabled>
+
+    <!-- ✅ FIX ADDED HERE -->
+    <entryDialog>Welcome</entryDialog>
+
     <botMlDomain>
         <label>akushi-bot</label>
         <mlIntents>
@@ -9,7 +13,9 @@
         </mlIntents>
         <name>akushi_bot</name>
     </botMlDomain>
+
     <botSource>None</botSource>
+
     <contextVariables>
         <contextVariableMappings>
             <SObjectType>VoiceCall</SObjectType>
@@ -22,6 +28,7 @@
         <includeInPrompt>true</includeInPrompt>
         <label>Voice Call Id</label>
     </contextVariables>
+
     <contextVariables>
         <contextVariableMappings>
             <SObjectType>MessagingSession</SObjectType>
@@ -34,6 +41,7 @@
         <includeInPrompt>true</includeInPrompt>
         <label>End User Id</label>
     </contextVariables>
+
     <contextVariables>
         <contextVariableMappings>
             <SObjectType>MessagingSession</SObjectType>
@@ -46,6 +54,7 @@
         <includeInPrompt>true</includeInPrompt>
         <label>Routable Id</label>
     </contextVariables>
+
     <contextVariables>
         <contextVariableMappings>
             <SObjectType>MessagingEndUser</SObjectType>
@@ -58,6 +67,7 @@
         <includeInPrompt>false</includeInPrompt>
         <label>Contact Id</label>
     </contextVariables>
+
     <defaultOutboundFlow>Route_from_akushi_bot</defaultOutboundFlow>
     <description>A bot from scratch.</description>
     <label>akushi-bot</label>
