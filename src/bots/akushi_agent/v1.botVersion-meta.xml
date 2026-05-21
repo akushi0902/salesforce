@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>v1</fullName>
+
+    <bot>akushi_agent</bot>
+    <versionNumber>1</versionNumber>
+    <status>Draft</status>
+
+    <!-- ✅ YES still required -->
+    <entryDialog>Welcome</entryDialog>
+
 </BotVersion>
