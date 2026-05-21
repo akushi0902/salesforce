@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bot xmlns="http://soap.sforce.com/2006/04/metadata">
-    <agentDSLEnabled>false</agentDSLEnabled>  
-    <entryDialog>Welcome</entryDialog>
+    <agentDSLEnabled>false</agentDSLEnabled>
     <agentTemplate>AiCopilot__AgentforceAgent</agentTemplate>
     <agentType>EinsteinServiceAgent</agentType>
+
     <botMlDomain>
         <label>akushi-agent</label>
         <name>akushi_agent</name>
     </botMlDomain>
+
     <botSource>None</botSource>
     <botUser>akushi_agent@00dns00000sgowv994206462.ext</botUser>
+
     <contextVariables>
         <contextVariableMappings>
             <SObjectType>VoiceCall</SObjectType>
@@ -52,6 +54,7 @@
         <includeInPrompt>true</includeInPrompt>
         <label>Voice Call Id</label>
     </contextVariables>
+
     <contextVariables>
         <contextVariableMappings>
             <SObjectType>MessagingSession</SObjectType>
@@ -94,6 +97,7 @@
         <includeInPrompt>true</includeInPrompt>
         <label>End User Id</label>
     </contextVariables>
+
     <contextVariables>
         <contextVariableMappings>
             <SObjectType>MessagingSession</SObjectType>
@@ -136,6 +140,7 @@
         <includeInPrompt>true</includeInPrompt>
         <label>Routable Id</label>
     </contextVariables>
+
     <contextVariables>
         <contextVariableMappings>
             <SObjectType>MessagingSession</SObjectType>
@@ -178,6 +183,7 @@
         <includeInPrompt>false</includeInPrompt>
         <label>End User Language</label>
     </contextVariables>
+
     <contextVariables>
         <contextVariableMappings>
             <SObjectType>MessagingEndUser</SObjectType>
@@ -220,10 +226,12 @@
         <includeInPrompt>false</includeInPrompt>
         <label>Contact Id</label>
     </contextVariables>
+
     <description>You are an AI Agent whose job is to help customers with DevOps-related inquiries, including CI/CD pipelines, infrastructure automation, and deployment troubleshooting.</description>
     <label>akushi-agent</label>
     <logPrivateConversationData>true</logPrivateConversationData>
     <richContentEnabled>true</richContentEnabled>
     <sessionTimeout>0</sessionTimeout>
+
     <type>ExternalCopilot</type>
 </Bot>
