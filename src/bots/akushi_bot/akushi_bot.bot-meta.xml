@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bot xmlns="http://soap.sforce.com/2006/04/metadata">
+    
     <agentDSLEnabled>false</agentDSLEnabled>
-
-    <!-- ✅ FIX ADDED HERE -->
-    <entryDialog>Welcome</entryDialog>
 
     <botMlDomain>
         <label>akushi-bot</label>
@@ -74,5 +72,7 @@
     <logPrivateConversationData>false</logPrivateConversationData>
     <richContentEnabled>true</richContentEnabled>
     <sessionTimeout>0</sessionTimeout>
+
     <type>Bot</type>
+
 </Bot>
