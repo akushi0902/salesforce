@@ -1,4 +1,3 @@
-
 public class AccountCleanupBatch
     implements Database.Batchable<SObject> {
 
