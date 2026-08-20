@@ -1,8 +1,3 @@
-
-
-
-
-
 public class AccountCleanupBatch123
  implements Database.Batchable<SObject> {
 
