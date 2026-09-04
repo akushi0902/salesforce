@@ -1,4 +1,4 @@
-public class AccountCleanupBatch123
+public class AccountCleanupBatch
  implements Database.Batchable<SObject> {
 
     public Database.QueryLocator start(
