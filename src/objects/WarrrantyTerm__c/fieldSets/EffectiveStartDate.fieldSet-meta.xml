@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EffectiveStartDate</fullName>
+    <description>2025
+2026
+2027</description>
+    <label>Effective Start Date</label>
+</FieldSet>
