@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>test__c</fullName>
+    <description>Data quality score measuring key fields: Close Date in the past, Next Step Due Dates in the past, Opportunity Source, Last Activities, and Opportunity Owner</description>
+    <externalId>false</externalId>
+    <formula>IF(  RecordType.Name = &quot;Pre-Opp&quot; , 100 ,
+IF( IsClosed , 100 , 
+IF(CloseDate &gt;= TODAY() , 20 , 0) +
+IF( Next_Step_Due_Date__c &gt;= TODAY() , 20 , 0) +
+IF( !ISBLANK ( TEXT(  Opportunity_Source__c )) , 20 , 0 ) +
+IF( AND(
+   TODAY() - LastActivityDate &lt; 30,
+   !ISBLANK (LastActivityDate)) , 20 , 0) +
+IF(  Owner.Profile.Name = &quot;Account Exec&quot; , 20 , 0) ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>test</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>
