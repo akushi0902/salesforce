@@ -2,9 +2,9 @@ public with sharing class AccountSelector {
 
     public static List<Account> getActiveAccounts(Integer limitSize) {
         return [
-            SELECT Id, Name, Industry, Active__c
+            SELECT Id, Name, Industry
             FROM Account
-            WHERE Active__c = :ApplicationConstants.STATUS_ACTIVE
+            WHERE Active__c = 'Active'
             LIMIT :limitSize
         ];
     }
