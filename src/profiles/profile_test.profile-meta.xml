@@ -3,6 +3,16 @@
     <custom>true</custom>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Event.Brand__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Task.Brand__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>profile_test1__c.profile_test2__c</field>
         <readable>true</readable>
     </fieldPermissions>
