@@ -1,0 +1,3 @@
+Static Resource Test 03
+Version: 1.0
+Purpose: Opsera deployment and deprecation package testing
